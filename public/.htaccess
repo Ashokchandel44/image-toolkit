@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteBase /image-toolkit/
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /image-toolkit/index.html [L]
