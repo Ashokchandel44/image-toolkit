@@ -36,3 +36,4 @@ jobs:
           port: 21
           local-dir: dist/
           server-dir: public_html/image-toolkit/
+          dangerous-clean-slate: true
