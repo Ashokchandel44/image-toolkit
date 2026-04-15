@@ -13,16 +13,32 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Show root files
+        run: |
+          pwd
+          ls -la
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
+
+      - name: Check Node and npm
+        run: |
+          node -v
+          npm -v
+
+      - name: Check package.json
+        run: cat package.json
 
       - name: Install dependencies
         run: npm install
 
       - name: Build project
         run: npm run build
+
+      - name: Show dist files
+        run: ls -la dist
 
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
