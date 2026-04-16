@@ -27,15 +27,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Show built files
-        run: |
-          echo "DIST CONTENT:"
-          ls -la dist
-          echo "ASSETS CONTENT:"
-          ls -la dist/assets
-          echo "INDEX CONTENT:"
-          cat dist/index.html
-
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -44,5 +35,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: dist/
-          server-dir: image-toolkit/
+          server-dir: public_html/image-toolkit/
           dangerous-clean-slate: true
