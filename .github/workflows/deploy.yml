@@ -15,7 +15,7 @@ jobs:
 
       - name: Setup Node
         uses: actions/setup-node@v4
-        with:   
+        with:
           node-version: 20
 
       - name: Clean install dependencies
@@ -27,6 +27,17 @@ jobs:
       - name: Build project
         run: npm run build
 
+      - name: Show built files
+        run: |
+          echo "ROOT:"
+          pwd
+          echo "DIST:"
+          ls -la dist
+          echo "ASSETS:"
+          ls -la dist/assets
+          echo "INDEX:"
+          cat dist/index.html
+
       - name: Deploy via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -36,4 +47,4 @@ jobs:
           port: 21
           local-dir: dist/
           server-dir: image-toolkit/
-          dangerous-clean-slate: true
+          dangerous-clean-slate: true  
