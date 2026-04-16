@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20 
+          node-version: 20
 
       - name: Clean install dependencies
         run: npm ci
@@ -35,5 +35,5 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           local-dir: dist/
-          server-dir: public_html/image-toolkit/
+          server-dir: image-toolkit/
           dangerous-clean-slate: true
