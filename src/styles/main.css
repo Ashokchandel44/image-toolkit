@@ -139,8 +139,8 @@ textarea {
 }
 
 .brand-mark {
-  width: 3rem;
-  height: 3rem;
+  width: 130px;
+  height: 40px;
   border-radius: 0.9rem;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -150,7 +150,7 @@ textarea {
 .brand-mark img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .main-nav {
@@ -161,7 +161,7 @@ textarea {
 }
 
 .nav-link {
-  padding: 0.62rem 0.92rem;
+  padding: 12px 12px;
   border-radius: var(--radius-pill);
   color: var(--muted);
   border: 1px solid transparent;
@@ -582,8 +582,8 @@ summary {
 }
 
 .footer-brand img {
-  width: 3.1rem;
-  height: 3.1rem;
+  width: 130px;
+  height: 40px;
   border-radius: 0.85rem;
   border: 1px solid var(--line);
 }
@@ -642,6 +642,7 @@ summary {
     opacity: 0;
     transform: translateY(9px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -664,6 +665,7 @@ summary {
 }
 
 @media (max-width: 860px) {
+
   .header-inner,
   .footer-inner {
     flex-direction: column;
