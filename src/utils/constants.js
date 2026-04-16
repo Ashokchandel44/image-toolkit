@@ -9,6 +9,7 @@ export const NAV_ITEMS = [
   { path: '/convert-image', label: 'Convert' },
   { path: '/watermark-image', label: 'Watermark' },
   { path: '/adjust-image', label: 'Adjust' },
+  { href: 'https://travelwithanki.com/calculators/', label: 'Calculators', external: true },
 ];
 
 export const TOOL_CARDS = [

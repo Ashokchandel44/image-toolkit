@@ -23,11 +23,11 @@ function HomePage() {
             </p>
           </div>
           <div className="hero-panel">
-            <p>Ready for shared hosting</p>
+            <p>Simple, secure, and hosting-friendly</p>
             <ul>
-              <li>React + React Router</li>
-              <li>Browser-only image processing</li>
-              <li>Subfolder deployment support</li>
+              <li>Runs entirely in your browser</li>
+              <li>No backend server required</li>
+              <li>Works on shared hosting and subfolders</li>
             </ul>
           </div>
         </div>
