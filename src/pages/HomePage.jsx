@@ -16,7 +16,7 @@ function HomePage() {
       <section className="hero">
         <div className="container hero-grid">
           <div>
-            <p className="eyebrow">Frontend-only image editor ashok test</p>
+            <p className="eyebrow">Frontend-only image editor</p>
             <h1>All-in-one image tools that run fully in the browser.</h1>
             <p className="hero-copy">
               Compress, resize, crop, convert, watermark, inspect metadata, and more without a backend runtime.
