@@ -19,6 +19,13 @@ function App() {
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<HomePage />} />
+        <Route path="/jpg-to-png/" element={<ConvertPage variant="jpg-to-png" />} />
+        <Route path="/png-to-jpg/" element={<ConvertPage variant="png-to-jpg" />} />
+        <Route path="/image-compressor/" element={<CompressPage />} />
+        <Route path="/image-resizer/" element={<ResizePage />} />
+        <Route path="/image-cropper/" element={<CropPage />} />
+        <Route path="/webp-converter/" element={<ConvertPage variant="webp-converter" />} />
+        <Route path="/watermark-image/" element={<WatermarkPage />} />
         <Route path="/compress-image" element={<CompressPage />} />
         <Route path="/resize-image" element={<ResizePage />} />
         <Route path="/crop-image" element={<CropPage />} />

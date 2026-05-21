@@ -519,6 +519,34 @@ textarea {
   gap: 0.8rem;
 }
 
+.related-panel h2 {
+  margin-bottom: 0.8rem;
+}
+
+.related-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.related-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 0.62rem 0.85rem;
+  border: 1px solid rgba(14, 139, 130, 0.22);
+  border-radius: var(--radius-pill);
+  color: var(--primary-deep);
+  background: rgba(14, 139, 130, 0.09);
+  font-weight: 700;
+}
+
+.related-link:hover {
+  color: #ffffff;
+  border-color: transparent;
+  background: linear-gradient(140deg, var(--primary), var(--primary-deep));
+}
+
 details {
   border-radius: var(--radius-lg);
   border: 1px solid var(--line);

@@ -47,16 +47,19 @@ function CompressPage() {
 
   return (
     <ToolPageShell
-      title="Compress Image"
-      description="Compress image files online in the browser with quality controls and optional target size settings."
+      title="Free Image Compressor Online"
+      seoTitle="Free Image Compressor Online | Compress Images in Browser"
+      description="Compress images online for free directly in your browser. Reduce image size while keeping good quality. No upload required."
+      canonical="https://travelwithanki.com/image-toolkit/image-compressor/"
+      intro="Compress JPG, PNG, and WebP images locally in your browser to create smaller files for websites, email, and sharing."
       seoContent={{
-        whatItDoes: 'This tool reduces image file size using browser-based compression so you can create lighter images for websites, email, or messaging.',
-        howToUse: 'Upload an image, adjust the quality slider or enter a target size in KB, then run compression and download the processed image.',
+        whatItDoes: 'This free image compressor reduces file size using browser-based compression so you can create lighter images without uploading them.',
+        howToUse: 'Upload an image, adjust the quality slider or enter a target size in KB, then compress and download the processed image.',
         whyUseful: 'Smaller image files load faster, use less storage, and are easier to share while keeping acceptable visual quality.',
       }}
       faqItems={[
-        { question: 'Will compression reduce image quality?', answer: 'Usually a little, depending on the quality setting. The preview helps you decide whether the tradeoff is acceptable.' },
-        { question: 'Can the tool hit an exact target size?', answer: 'It aims for the target when practical, but exact sizes can vary because browser-side compression is approximate.' },
+        { question: 'Will image compression reduce quality?', answer: 'Usually a little, depending on the quality setting. The preview helps you decide whether the smaller file still looks good.' },
+        { question: 'Are compressed images uploaded?', answer: 'No. Compression happens directly in your browser, so no upload is required.' },
       ]}
     >
       <div className="tool-main">

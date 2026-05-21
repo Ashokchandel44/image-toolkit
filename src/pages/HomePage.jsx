@@ -6,20 +6,60 @@ import SeoContentSection from '../components/SeoContentSection';
 import FaqSection from '../components/FaqSection';
 import { TOOL_CARDS } from '../utils/constants';
 
+const title = 'Free Image Toolkit Online | Compress, Resize & Convert Images';
+const description = 'Use this free online Image Toolkit to compress, resize, crop, convert, watermark, and export images directly in your browser. No upload required.';
+const canonical = 'https://travelwithanki.com/image-toolkit/';
+const faqItems = [
+  { question: 'Does ImageToolkit upload my images?', answer: 'No. The tools process images directly in your browser, so your files do not need to be uploaded to a server.' },
+  { question: 'What can I do with this free Image Toolkit?', answer: 'You can compress, resize, crop, convert, watermark, adjust, inspect metadata, and export images from one browser-based toolkit.' },
+  { question: 'Can I use ImageToolkit on mobile?', answer: 'Yes. The app is responsive and works on modern mobile and desktop browsers with JavaScript enabled.' },
+];
+const schemas = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Free Image Toolkit Online',
+    url: canonical,
+    description,
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: 'All',
+    browserRequirements: 'Requires JavaScript enabled',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqItems.map((item) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  },
+];
+
 function HomePage() {
   return (
     <>
       <PageSeo
-        title="ImageToolkit | Browser-based image tools"
-        description="Use ImageToolkit to compress, resize, crop, convert, watermark, adjust, and export images directly in your browser."
+        title={title}
+        description={description}
+        canonical={canonical}
+        schema={schemas}
       />
       <section className="hero">
         <div className="container hero-grid">
           <div>
             <p className="eyebrow">Frontend-only image editor</p>
-            <h1>All-in-one image tools that run fully in the browser.</h1>
+            <h1>Free Image Toolkit Online</h1>
             <p className="hero-copy">
-              Compress, resize, crop, convert, watermark, inspect metadata, and more without a backend runtime.
+              Compress, resize, crop, convert, watermark, inspect metadata, and export images directly in your browser.
             </p>
           </div>
           <div className="hero-panel">
@@ -51,11 +91,7 @@ function HomePage() {
           whyUseful="Because processing happens client-side, hosting stays simple, privacy is improved, and the final app can run without Node.js or an API server in production."
         />
         <FaqSection
-          items={[
-            { question: 'Does ImageToolkit require a backend to run?', answer: 'No. After build, it is a static frontend app that runs fully in the browser on normal shared hosting.' },
-            { question: 'Will every image format conversion work in every browser?', answer: 'Only browser-supported formats are offered. If a browser cannot export a format reliably, the app shows a graceful validation message.' },
-            { question: 'Can I deploy it in a subfolder such as /image-toolkit/?', answer: 'Yes. The Vite base path, BrowserRouter basename, and included .htaccess file are configured for shared hosting subfolder deployment.' },
-          ]}
+          items={faqItems}
         />
       </section>
     </>

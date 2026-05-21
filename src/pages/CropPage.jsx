@@ -44,16 +44,19 @@ function CropPage() {
 
   return (
     <ToolPageShell
-      title="Crop Image"
-      description="Crop images in the browser with an interactive selector and preview the exact output before download."
+      title="Free Image Cropper Online"
+      seoTitle="Free Image Cropper Online | Crop Images in Browser"
+      description="Crop images online for free directly in your browser. Select custom size, crop area, and download the final image instantly."
+      canonical="https://travelwithanki.com/image-toolkit/image-cropper/"
+      intro="Crop images online with an interactive browser-based crop area and download the final image instantly."
       seoContent={{
-        whatItDoes: 'This tool lets you select a specific crop region and export just that portion of the image.',
+        whatItDoes: 'This image cropper lets you select a specific crop region and export just that portion of the image.',
         howToUse: 'Upload an image, drag and zoom the crop area to frame the content you want, then export the cropped result.',
         whyUseful: 'Cropping helps remove distractions, improve composition, and create image sizes that fit social posts or layouts better.',
       }}
       faqItems={[
-        { question: 'Can I preview the cropped result before downloading?', answer: 'Yes. The app renders a processed preview after you confirm the crop.' },
-        { question: 'Does the crop happen locally?', answer: 'Yes. The crop runs in the browser using canvas-based processing.' },
+        { question: 'Can I preview the cropped result before downloading?', answer: 'Yes. The app renders a processed preview after you apply the crop.' },
+        { question: 'Does the crop happen locally?', answer: 'Yes. The crop runs in your browser using canvas-based processing.' },
       ]}
     >
       <div className="tool-main">

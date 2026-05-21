@@ -47,15 +47,18 @@ function WatermarkPage() {
 
   return (
     <ToolPageShell
-      title="Watermark Image"
-      description="Add a text watermark to images online with control over position, size, color, and opacity."
+      title="Add Watermark to Image Online Free"
+      seoTitle="Add Watermark to Image Online Free | Browser-Based Watermark Tool"
+      description="Add text or image watermark to your photos online for free. Browser-based watermark image tool with instant download."
+      canonical="https://travelwithanki.com/image-toolkit/watermark-image/"
+      intro="Add a text watermark to your image in the browser with control over position, size, color, and opacity."
       seoContent={{
-        whatItDoes: 'This tool overlays text on top of your uploaded image and exports a watermarked version.',
+        whatItDoes: 'This watermark tool overlays text on top of your uploaded image and exports a watermarked version.',
         howToUse: 'Upload an image, enter watermark text, adjust the style and position, then export the final image.',
         whyUseful: 'Watermarks can help with attribution, branding, copyright reminders, or creating drafts for review.',
       }}
       faqItems={[
-        { question: 'Does this add text only or image logos too?', answer: 'This version focuses on reliable browser-side text watermarks. Image-logo watermark support can be added later.' },
+        { question: 'Can I add a watermark without uploading my image?', answer: 'Yes. The watermark is applied in your browser, and the final image is downloaded from your device.' },
         { question: 'Can I control watermark transparency?', answer: 'Yes. Use the opacity slider to make the watermark lighter or stronger.' },
       ]}
     >

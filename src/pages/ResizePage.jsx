@@ -77,16 +77,19 @@ function ResizePage() {
 
   return (
     <ToolPageShell
-      title="Resize Image"
-      description="Resize images online by custom dimensions or social media presets using high-quality browser-side scaling."
+      title="Free Image Resizer Online"
+      seoTitle="Free Image Resizer Online | Resize Images for Blog, YouTube & Social Media"
+      description="Resize images online for free for blogs, YouTube thumbnails, Pinterest pins, and social media. Fast browser-based image resizing tool."
+      canonical="https://travelwithanki.com/image-toolkit/image-resizer/"
+      intro="Resize images for blogs, YouTube thumbnails, Pinterest pins, and social media with custom dimensions or built-in presets."
       seoContent={{
-        whatItDoes: 'This tool changes image dimensions in the browser while preserving quality with client-side resizing.',
+        whatItDoes: 'This image resizer changes image dimensions in the browser while preserving quality with client-side resizing.',
         howToUse: 'Upload an image, choose a preset or enter dimensions manually, keep aspect ratio if needed, then export the resized image.',
         whyUseful: 'Resizing helps images fit websites, social media posts, thumbnails, email layouts, and more without relying on server processing.',
       }}
       faqItems={[
+        { question: 'Can I resize images for YouTube and social media?', answer: 'Yes. Use a preset such as YouTube Thumbnail or enter custom dimensions for blogs and social posts.' },
         { question: 'Will resizing distort my image?', answer: 'Not if you keep aspect ratio on or use a preset that matches the intended output shape.' },
-        { question: 'Are social media presets included?', answer: 'Yes. The app includes common presets such as Instagram, Facebook, YouTube, WhatsApp, X, and LinkedIn.' },
       ]}
     >
       <div className="tool-main">
