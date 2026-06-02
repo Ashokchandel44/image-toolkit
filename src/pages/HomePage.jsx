@@ -74,7 +74,7 @@ function HomePage() {
       </section>
       <section className="container">
         <div className="section-heading">
-          <h2>Tools</h2>
+          <h2>Tools ashok</h2>
           <p>Choose a tool and process your images directly on-device.</p>
         </div>
         <div className="tool-grid">
